@@ -1,4 +1,8 @@
 package project02.arenaBattle.enumsAndConstants;
 
-public class WearLocation {
+public enum WearLocation {
+  HEAD,
+  TORSO,
+  FEET,
+  WEAPON
 }

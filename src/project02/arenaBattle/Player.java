@@ -13,13 +13,16 @@ import java.util.Hashtable;
 public class Player {
   private Hashtable<WearLocation, IGear> equippedGear;
   private final Hashtable<PlayerAbility, Integer> abilityScores;
+  private final WeaponType preferredWeapon;
 
   /**
    * Creates a new player with initialized properties.
+   * @param preferredWeapon
    */
-  public Player() {
-    equippedGear = new Hashtable<WearLocation, IGear>();
-    abilityScores = new Hashtable<PlayerAbility, Integer>();
+  public Player(WeaponType preferredWeapon) {
+    this.preferredWeapon = preferredWeapon;
+    this.equippedGear = new Hashtable<WearLocation, IGear>();
+    this.abilityScores = new Hashtable<PlayerAbility, Integer>();
     rollAbilities();
   }
 

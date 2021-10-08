@@ -5,30 +5,17 @@ package project02.arenaBattle;
  * It also provides the service contract for external clients.
  */
 public class Arena {
+  private String battleReport = "You must complete a battle before a report is available.\r\n";
 
-  private Player player1;
-  private Player player2;
-  private GearBag bag;
-
-  public Arena(Player player1, Player player2) {
-    this.bag = new GearBag();
-    this.player1 = player1;
-    this.player2 = player2;
+  public void admitPlayers(Player player1, Player player2) {
+    runBattleSimulation(player1, player2);
   }
 
-  public void initializeBattle() {
-
-  }
-
-  public void equipPlayersFromBag() {
-
-  }
-
-  public void beginBattle() {
-
+  private void runBattleSimulation(Player player1, Player player2) {
+    battleReport = "This is a battle report issued after a battle was fought";
   }
 
   public String getBattleReport() {
-    return "";
+    return battleReport;
   }
 }

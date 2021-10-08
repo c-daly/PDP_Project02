@@ -5,6 +5,6 @@ import project02.arenaBattle.interfaces.AbstractWeapon;
 
 public class Katanas extends AbstractWeapon {
   public Katanas() {
-    super(WeaponType.KATANAS);
+    super(WeaponType.KATANAS, numAttacks);
   }
 }
