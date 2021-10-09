@@ -5,6 +5,7 @@ import project02.arenaBattle.interfaces.IGear;
 
 import java.util.Arrays;
 import java.util.Hashtable;
+import java.util.List;
 
 /**
  * Class responsible for handling player actions/state during
@@ -26,6 +27,9 @@ public class Player {
     rollAbilities();
   }
 
+  public void equipGear(List<IGear> gear) {
+    
+  }
   public int getAttackDamage() {
     return 0;
   }
